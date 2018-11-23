@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;	
+}
+
+body > div {
+  font-size: 16px;
+  font-size: 1.6rem;
+	overflow: hidden;
+}
+
+/*-------------------------------------
+reset
+---------------------------------------*/
+
+html {
+	font-size: 62.5%;
+	overflow-y: scroll; 
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+	padding:0; margin:0;
+	color:#232222;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background: #f39a46;
+}
+
+body {
+	font-size:16px; font-size:1.6rem;
+	line-height:1.6;
+	margin:0;
+	padding:0;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,label,textarea,select,fieldset,legend,p,blockquote,img { margin:0; padding:0;}
+fieldset,img { border:0;}
+
+ol,ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	font-size:100%;
+}
+
+
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal;	font-weight:normal;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+pre,code,kbd,samp,tt {
+	font-family: monospace;
+	*font-size: 108%;
+	line-height: 100%;
+}
+img { line-height: 1; vertical-align: bottom;}
+
+.nowrap {white-space:nowrap;}
+.bold {font-weight:bold;}
+strong { font-weight: bold;}
+
+
+/*-------------------------------------
+common 
+---------------------------------------*/
+/* clear */
+.clear {
+	clear: both;
+	background: transparent;
+	height: 1px;
+	font-size: 1px;
+}
+
+.clearfix:after{/*for modern browser*/
+    content:".";
+    display: block;
+    height:0px;
+    clear:both;
+    line-height:0; 
+    visibility:hidden;
+}
+
+
+/* margin */
+.mgt3 {margin-top:3px !important;}
+.mgt5 {margin-top:5px !important;}
+.mgt10 {margin-top:10px !important;}
+.mgt15 {margin-top:15px !important;}
+.mgt20 {margin-top:20px !important;}
+.mgt25 {margin-top:25px !important;}
+.mgt30 {margin-top:30px !important;}
+.mgt35 {margin-top:35px !important;}
+.mgt40 {margin-top:40px !important;}
+.mgt60 {margin-top:60px !important;}
+
+.mgr5 {margin-right:5px !important;}
+.mgr10 {margin-right:10px !important;}
+.mgr15 {margin-right:15px !important;}
+.mgr20 {margin-right:20px !important;}
+.mgr25 {margin-right:25px !important;}
+.mgr30 {margin-right:30px !important;}
+.mgr35 {margin-right:35px !important;}
+.mgr40 {margin-right:40px !important;}
+
+.mgl5 {margin-left:5px !important;}
+.mgl10 {margin-left:10px !important;}
+.mgl15 {margin-left:15px !important;}
+.mgl20 {margin-left:20px !important;}
+.mgl25 {margin-left:25px !important;}
+.mgl30 {margin-left:30px !important;}
+.mgl35 {margin-left:35px !important;}
+.mgl40 {margin-left:40px !important;}
+
+.mgb5 {margin-bottom:5px !important;}
+.mgb10 {margin-bottom:10px !important;}
+.mgb15 {margin-bottom:15px !important;}
+.mgb20 {margin-bottom:20px !important;}
+.mgb25 {margin-bottom:25px !important;}
+.mgb30 {margin-bottom:30px !important;}
+.mgb35 {margin-bottom:35px !important;}
+.mgb40 {margin-bottom:40px !important;}
+
+/* padding */
+.pdt5 {padding-top:5px !important;}
+.pdt10 {padding-top:10px !important;}
+.pdt15 {padding-top:15px !important;}
+.pdt20 {padding-top:20px !important;}
+.pdt25 {padding-top:25px !important;}
+.pdt30 {padding-top:30px !important;}
+.pdt35 {padding-top:35px !important;}
+.pdt40 {padding-top:40px !important;}
+
+.pdr5 {padding-right:5px !important;}
+.pdr10 {padding-right:10px !important;}
+.pdr15 {padding-right:15px !important;}
+.pdr20 {padding-right:20px !important;}
+.pdr25 {padding-right:25px !important;}
+.pdr30 {padding-right:30px !important;}
+.pdr35 {padding-right:35px !important;}
+.pdr40 {padding-right:40px !important;}
+
+.pdl5 {padding-left:5px !important;}
+.pdl10 {padding-left:10px !important;}
+.pdl15 {padding-left:15px !important;}
+.pdl20 {padding-left:20px !important;}
+.pdl25 {padding-left:25px !important;}
+.pdl30 {padding-left:30px !important;}
+.pdl35 {padding-left:35px !important;}
+.pdl40 {padding-left:40px !important;}
+
+.pdb5 {padding-bottom:5px !important;}
+.pdb10 {padding-bottom:10px !important;}
+.pdb15 {padding-bottom:15px !important;}
+.pdb20 {padding-bottom:20px !important;}
+.pdb25 {padding-bottom:25px !important;}
+.pdb30 {padding-bottom:30px !important;}
+.pdb35 {padding-bottom:35px !important;}
+.pdb40 {padding-bottom:40px !important;}
+
+
+/* align */
+.alR {text-align:right;}
+.alL {text-align:left;}
+.alC {text-align:center;}
+
+.vaT {vertical-align:top !important;}
+.vaM {vertical-align:middle !important;}
+.vaB {vertical-align:bottom !important;}
+
+
+/* link */
+a:link {   color: #fff; text-decoration: none;}
+a:visited {color: #fff; text-decoration: none; transition: 0.5s ;}
+a:hover {  color: #d4d982; text-decoration: none; transition: 0.5s ;}
+a:active { color: #d4d982; text-decoration: none; transition: 0.5s ;}
+a img:hover {opacity: 0.7 ;transition: 0.5s;}
+
+/* text */
+.corRed { color:#d00101; font-weight:bold;}
+.txt12 {font-size:12px !important; font-size: 1.2rem !important;}
+.txt14 {font-size:14px !important; font-size: 1.4rem !important;}
+.txt16 {font-size:16px !important; font-size: 1.6rem !important;}
+.txt20 {font-size:20px !important; font-size: 2.0rem !important;}
+
+/* care */
+ul.care {font-size:12px; font-size: 1.2rem;}
+ul.care li{text-indent:-12px; padding-left:12px; padding-bottom:10px;}
+
+/* common */
+.wrap{ width: 1000px; margin: 0 auto;}
+.flex{display:flex;}
+
+
+/*-------------------------------------
+header
+---------------------------------------*/
+header{background:url(../images/IMG_2217.jpg); width: 100%; background-size: cover;}
+header h1{text-align: center; color:#fff; font-size:100px; font-size: 10.0rem; padding:200px 0;}
+
+
+/*-------------------------------------
+maincontents
+---------------------------------------*/
+
+/* productArea*/
+#proBox{padding: 20px 0 0px; text-align:center; }
+#proBox .flex{justify-content: space-between; margin:30px 0;}	
+#proBox .flex li{border:8px solid #fff;}		
+
+
+/*-------------------------------------
+footer
+---------------------------------------*/
+footer {padding-bottom:30px; text-align: center; color: #fff; font-size: 12px; font-size: 1.2rem;}
+

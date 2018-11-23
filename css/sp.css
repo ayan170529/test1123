@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1000px) {
+
+img{
+	max-width:100%;
+	height:auto;
+	width /***/:auto;
+}
+
+#proBox .flex li {width:30%;}	
+.wrap{ width:90%; margin: 0 auto;}	
+
+}
+
+
+@media screen and (max-width: 768px) {
+#proBox .flex{display: block;}	
+#proBox .flex li{margin-bottom:30px; width:100%;}	
+
+}
+
